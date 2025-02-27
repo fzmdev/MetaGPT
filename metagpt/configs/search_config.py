@@ -17,8 +17,8 @@ class SearchConfig(YamlModel):
     """Config for Search"""
 
     api_type: SearchEngineType = SearchEngineType.DUCK_DUCK_GO
-    api_key: str = ""
-    cse_id: str = ""  # for google
+    api_key: str = "AIzaSyB96Nr3x-v-770zr5tmSyywmoygnR1FGew"
+    cse_id: str = "2502202e6dbc549b2"  # for google
     search_func: Optional[Callable] = None
     params: dict = Field(
         default_factory=lambda: {
